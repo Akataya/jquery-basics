@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      
+        $("document").ready(function(){
+            $("#append").click(function(){
+               $("p:first").append("I just appended some copy"); 
+            });            
+            $("#prepend").click(function(){
+               $("p:first").prepend("I just preppended some copy"); 
+            });
+        });
+        
+      </script>
+      
+      <style>
+
+      </style>
+      
+  </head>
+    
+  <body>
+      <a id="append" href="#">Append</a>
+      <a id="prepend" href="#">Prepend</a>
+
+      <div id="container">
+        <p>Focus pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+        <p>Focus pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+        <p>jQuery pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+      </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

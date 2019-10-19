@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      
+        $("document").ready(function(){
+            
+            $("#add-class").click(function(){
+                $("p:first").addClass('color');
+            });            
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            });            
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('color');
+            });            
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size", "+=1px"); //will add 1px to the font size every time you click on it
+            });
+        });
+        
+      </script>
+      
+      <style>
+          .color{
+              color:#00D8FF;
+          }
+      </style>
+      
+  </head>
+    
+  <body>
+      <a href="#" id="add-class">Add Class</a>
+      <a href="#" id="remove-class">Remove Class</a>
+      <a href="#" id="toggle-class">Toggle Class</a>
+      <a href="#" id="increase-class">Increase Class</a>
+      <div id="container">
+        <p>1. Focus pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+        <p>2. Focus pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+        <p>3. jQuery pokus lalalla oajfakjd fksfnnk  jnfdgkjkndkgngfb</p>
+      </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
